@@ -10,6 +10,19 @@
 	li {
 		list-style-type: none;
 	}
+	.dropdown {
+		display: inline-block;
+	}
+	.dropdownContents {
+		display: none;
+		background-color: #ee00ee;
+		position: absolute; /*옆으로*/
+		width: 100px;
+		padding: 12px 16px;
+	}
+	.dropdown:hover .dropdownContents {
+		display: block;
+	}
 	.clear{
 		clear: both;
 	}
@@ -87,8 +100,17 @@
 	</header>
 	<div class='clear'></div>
 	<nav>
-				<ul>
-					<li> 관광 </li>
+		<div class="dropdown">
+				<ul> 관광지
+		<div class="dropdownContents">
+				<li> 바나힐</li>
+				<li> 다낭 대성당 </li>
+				<li> 호이안 올드타운 </li>
+				<li> 아시아파크 </li>
+				<li> 용다리 </li>
+		</div>
+				</ul>
+		</div>
 					<li> 맛집 </li>
 					<li> 카페 </li>
 					<li> 쇼핑 </li>
@@ -100,7 +122,7 @@
 			<img src='./img/img1.PNG' width="770">
 		</section>
 		<aside>
-			<ul>
+			<ul> 
 				<li> 지리적 배경 </li>
 				<li> 기후 </li>
 				<li> 교통 </li>
