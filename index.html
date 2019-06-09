@@ -7,18 +7,25 @@
 		padding: 0;
 		margin: 10px;
 	}
+	body {
+		background-color: #F9F9F9;
+		
+	}
+		
 	li {
-		list-style-type: none;
+		list-style: none;
+
 	}
 	.dropdown {
 		display: inline-block;
 	}	
 	.dropdownContents {
 		display: none;
-		background-color: #f9deea;
+		background-color: #F6F6F6;
 		position: absolute; /*옆으로*/
-		width: 200px;
-		padding: 12px 20px;
+		width: 150px;
+		padding: 12px 16px;
+		text-align: center;
 	}
 	.dropdown:hover .dropdownContents {
 		display: block;
@@ -28,9 +35,10 @@
 	}
 	header {
 		width: 1000px;
-		height: 100px;
+		height: 300px;
 		margin-top: 10px;
-		border: solid 1px #cccccc;
+		border: dashed 1px #cccccc;
+		background-image: url(./img/Danang.JPG);
 	}
 	#logo {
 		margin: 20px;
@@ -43,34 +51,35 @@
 	nav {
 		width: 1000px;
 		height: 50px;
-		margin-top: 10px;
-		padding-top: 15px;
-		border: solid 1px #cccccc;
+		margin-top: 15px;
+		padding-top: 5px;
+		border: dashed 1px #cccccc;
 	}
 	nav li {
 		display: inline;
-		margin: 80px ;
+		margin: 40px ;
+
 	}
 	section {
 		float: left;
-		margin-top: 5px;
-		border: solid 1px #cccccc;
+		margin-top: 15px;
+		border: dashed 1px #cccccc;
 	}
 	aside {
 		float: left;
 		margin-left: 40px;
 		margin-top: 10px;
-		border: solid 1px #cccccc;
+		border: dashed 1px #cccccc;
 		padding-left: 10px;
 	}
 	aside li {
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 	}
 	footer {
 		width: 990px;
 		height: 100px;
 		margin-top: 10px;
-		border: solid 1px #cccccc;
+		border: dashed 1px #cccccc;
 	}
 	#address {
 		float: left;
@@ -92,7 +101,7 @@
 	<div id='page'>
 	<header>
 		<div id='logo'>
-			베트남 다낭 
+			 
 		</div>
 		<div id='top'>
 			로그인 | 회원가입 | 마이페이지 | 고객센터
@@ -101,73 +110,78 @@
 	<div class='clear'></div>
 	<nav>
 		<div class="dropdown">
-				<ul> 관광지
+				<ul> ♤관광지 
 		<div class="dropdownContents">
-				<li> 바나힐</li>
+				<li> 바나힐 </li>
 				<li> 다낭 대성당 </li>
-				<li> 호이안 올드타운 </li>
-				<li> 아시아파크 </li>
-				<li> 용다리 </li>
+				<li> 아시아 파크 </li>
+				<li>용다리</li>
+				<li><a href="./tour.html"> →→→→</a> </li>
 		</div>
 				</ul>
 		</div>
 		<div class="dropdown">
-				<ul> 맛집
+				<ul> ♤맛집
 		<div class="dropdownContents">
-				<li> 남트랑 </li>
-				<li> 꾸오도 씨푸드 </li>
-				<li> 코코베이 조슈아 </li>
-				<li> 버거브로스 </li>
+				<li> 하노이 쓰어 </li>
+				<li> 반쎄오 바융 </li>
+				<li> 퍼 박 63 </li>
+				<li><a href="./food.html"> →→→</a></li> 
 		</div>
 				</ul>
 		</div>
 		<div class="dropdown">
-				<ul> 카페
+				<ul> ♤카페
 		<div class="dropdownContents">
-				<li> 몰리커피 </li>
 				<li> 콩카페 </li>
-				<li> 더 커피 하우스 </li>
+				<li> 하이랜드 커피 </li>
+				<li><a href="./cafe.html"> →→</a> </li>
 		</div>
 				</ul>
 		</div>
 		<div class="dropdown">
-				<ul> 쇼핑
+				<ul> ♤쇼핑
 		<div class="dropdownContents">
-				<li> 수비니어 카페 </li>
-				<li> 한시장 </li>
-				<li> 롯데마트 </li>
+				<li> 빈컴 플라자 </li>
+				<li> 페바 초콜릿</li>
+				<li><a href="./shopping.html"> →→</a> </li>
 		</div>
 				</ul>
-		</div><div class="dropdown">
-				<ul> 바
-		<div class="dropdownContents">
-				<li> 스카이 36 </li>
-				<li> 세바 스카이라운지 </li>
-		</div>
-				</ul>
-		</div>
 					
 			</nav>	
 	<div class='clear'></div> <!--float 속성 해제 -->
 		<section>
-			<img src='./img/img1.PNG' width="770">
+			<a href="./weather.html">
+			<img src='./img/Weather Inc.PNG' width="710">
+ 		     </a>
 		</section>
 		<aside>
 			<ul> 
-				<li> 지리적 배경 </li>
-				<li> 기후 </li>
-				<li> 교통 </li>
-				<li> 환율/시간 </li>
+				<li><a href="./geo.html"> ⊙지리적 배경 </a></li>
+				<li><a href="./climate.html"> ⊙기후 </a></li>
+				<li><a href="./traffic.html"> ⊙교통 </a></li>
 			</ul>
 		</aside>		
 		<section class='clear'>
-				<img src='./img/img2.PNG' width="970">
+				<a href="./1.html">			
+				<img src='./img/1.PNG' width="217"> </a>
+				<img src='./img/2.PNG' width="217">
+				<img src='./img/3.PNG' width="217">
+				<img src='./img/4.PNG' width="217">
+
+		</section>
+		<section class='clear'>
+				<img src='./img/airplane.PNG' width="970">
+		</section>
+		<section class='clear'>
+				<img src='./img/Danang2.JPG' width="970">
 		</section>
 	<div class='clear'></div> 
 		<footer>
 			<div id='address'>
-				주최: 하나투어 <br>
-				주간: 한국관광공사, 한국관광협회중앙회, 전국지방자치단체
+				(주)하나투어 | 주소:(03161) 서울특별시 종로구 인사동 5길 41 <br>
+				하나투어 고객센터:1577-1233 | 팩스:02-734-0392 <br>
+				부득이한 사정에 의해 여행일정이 변경되는 경우 여행자의 사전 동의를 받습니다.
 			</div>
 			<div id='customer'>
 				관광안내전화: 1577-1233
