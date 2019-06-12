@@ -3,21 +3,176 @@
 <head>
 	<title>cafe</title>
 	<style>
+		*{
+		padding: 0;
+		margin: 10px;
+		}	
 		body {
-			background-color: #FAECC5;
+			background-color: #F9F9F9;
 		}
 		#back {
 			text-align: right;
 		}
+
+	li {
+		list-style: none;
+
+	}
+	div {
+		text-align: center;
+	}
+	.dropdown {
+		display: inline-block;
+	}	
+	.dropdownContents {
+		display: none;
+		background-color: #F6F6F6;
+		position: absolute; /*옆으로*/
+		width: 150px;
+		padding: 12px 16px;
+		text-align: center;
+	}
+	.dropdown:hover .dropdownContents {
+		display: block;
+	}
+	.clear{
+		clear: both;
+	}
+	.clear2{
+		clear: both;
+	}
+	header {
+		width: 1000px;
+		height: 300px;
+		margin-top: 10px;
+		border: dashed 1px #cccccc;
+		background-image: url('./img/danang.jpg');
+	}
+	#logo {
+		margin: 20px;
+		float: left;
+	}
+	#top {
+		float: right;
+		margin: 30px 20px 0 0;
+	}
+	nav {
+		width: 1000px;
+		height: 50px;
+		margin-top: 15px;
+		padding-top: 5px;
+		border: dashed 1px #cccccc;
+	}
+	nav li {
+		display: inline;
+		margin: 40px ;
+
+	}
+	aside {
+		width: 200px;
+		float: left;
+		margin-left: 40px;
+		margin-top: 10px;
+		border: dashed 1px #cccccc;
+		padding-left: 10px;
+	}
+	aside li {
+		margin-bottom: 20px;
+	}
+	section {
+		width: 700px;
+		float: right;
+		margin-top: 15px;
+		border: dashed 1px #cccccc;
+
+	}
+	#page {
+		width: 1000px;
+		margin: auto;
+		//border: solid 1px red;
+	}
 	</style>
 </head>
 <body>
-<h1> ★카페★ </h1>
-	<fieldset>
-		<ul>
-			<li><a href="#Cong"> 콩 카페 </a></li>
-			<li><a href="#HighLand"> 하이랜드 커피 </a></li>
-	</fieldset>
+<h1> ★맛집★ </h1>
+	<div id='page'>
+	<header>
+		<div id='logo'>
+			 
+		</div>
+		<div id='top'>
+		로그인 | 회원가입 | 마이페이지 | 고객센터
+		</div>
+	</header>
+	<div class='clear'></div>
+	<nav>
+		<div class="dropdown">
+				<ul> ♤관광지 
+		<div class="dropdownContents">
+				<li> 바나힐 </li>
+				<li> 다낭 대성당 </li>
+				<li> 아시아 파크 </li>
+				<li>용다리</li>
+		</div>
+				</ul>
+		</div>
+		<div class="dropdown">
+				<ul> ♤맛집
+		<div class="dropdownContents">
+				<li> 하노이 쓰어 </li>
+				<li> 반쎄오 바융 </li>
+				<li> 퍼 박 63 </li>
+		</div>
+				</ul>
+		</div>
+		<div class="dropdown">
+				<ul> ♤카페
+		<div class="dropdownContents">
+				<li> 콩카페 </li>
+				<li> 하이랜드 커피 </li>
+		</div>
+				</ul>
+		</div>
+		<div class="dropdown">
+				<ul> ♤쇼핑
+		<div class="dropdownContents">
+				<li> 빈컴 플라자 </li>
+				<li> 페바 초콜릿</li>
+		</div>
+				</ul>
+		</div>		
+		<div class="dropdown">
+				<ul> ♤추천 일정
+		<div class="dropdownContents">
+				<li> 베트남 음식 </li>
+				<li> 조금 느린 여행</li>
+				<li> 다낭의 밤</li>
+		</div>
+				</ul>
+		</div>				
+			</nav>	
+		<aside>
+			<ul><h3><a href="./tour.html">◎관광지</a></h3> 
+				<li>→바나 힐</li>
+				<li>→다낭 대성당</li>
+				<li>→아시아 파크</li>
+				<li>→용교</li> 
+			</ul> <hr>
+			<ul><h3><a href="./food.html">◎맛집</a></h3> 
+				<li>→하노이 쓰어</li>
+				<li>→반쎄오 바융</li>
+				<li>→퍼 박 63</li>
+			</ul> <hr>
+			<ul><h3>◎카페</h3> 
+				<li><a href="#Cong">→콩카페</a></li>
+				<li><a href="#HighLand">→하이랜드 커피</a></li>
+			</ul> <hr>
+			<ul><h3><a href="./shopping.html">◎쇼핑</a></h3>
+				<li>→빈컴 플라자</li>
+				<li>→페바 초콜릿</li>
+			</ul> <hr>
+		</aside>
+<section>	
 <div id="Cong">
 <h3> 콩 카페 </h3>
 사회주의 콘셉트의 카페 <hr>
@@ -36,7 +191,7 @@
 -전화번호: 0911 811 150 <br>
 -홈페이지: http://congcaphe.com <br> 
 -찾아가는 방법: 한 강교(Cầu Sông Hàn)와 용교(Cầu Rồng) 사이, 강변에 위치 <br>
-<img src="./img/Cong.PNG" width="700px">
+<img src="./img/Cong.PNG" width="500px">
 </fieldset> <hr>
 
 <div id="HighLand">
@@ -54,12 +209,13 @@
 -주소: 74 Bạch Đằng, Hải Châu, Đà Nẵng <br>
 -홈페이지: http://www.highlandscoffee.com.vn/en <br>
 -찾아가는 방법: 한 강교(Cầu Sông Hàn)와 용교(Cầu Rồng) 사이, 강변에 위치 <br>
-<img src="./img/HIghLand.PNG" width="700px">
+<img src="./img/HighLand.PNG" width="500px">
 </fieldset><p>
+</section>
 
 <div id="back">
-<a href="./shopping.html">
-<h2>→</h2>
+<a href="./index.html">
+<h2>→돌아가</h2>
 </a>
 </div>
 
