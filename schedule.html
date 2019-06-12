@@ -3,19 +3,172 @@
 <head>
 	<title>추천 일정</title>
 	<style>
-		body {
-		background-color: #FEFDFF;
-		}
-		section.trans:hover{
-		transform: rotate(180deg);
+		*{
+		padding: 0;
+		margin: 10px;
 		}	
+		body {
+			background-color: #F9F9F9;
+		}
 		#back {
 			text-align: right;
 		}
-	</style>	
+
+	li {
+		list-style: none;
+
+	}
+	div {
+		text-align: center;
+	}
+	.dropdown {
+		display: inline-block;
+	}	
+	.dropdownContents {
+		display: none;
+		background-color: #F6F6F6;
+		position: absolute; /*옆으로*/
+		width: 150px;
+		padding: 12px 16px;
+		text-align: center;
+	}
+	.dropdown:hover .dropdownContents {
+		display: block;
+	}
+	.clear{
+		clear: both;
+	}
+	.clear2{
+		clear: both;
+	}
+	header {
+		width: 1000px;
+		height: 300px;
+		margin-top: 10px;
+		border: dashed 1px #cccccc;
+		background-image: url('./img/danang.jpg');
+	}
+	#logo {
+		margin: 20px;
+		float: left;
+	}
+	#top {
+		float: right;
+		margin: 30px 20px 0 0;
+	}
+	nav {
+		width: 1000px;
+		height: 50px;
+		margin-top: 15px;
+		padding-top: 5px;
+		border: dashed 1px #cccccc;
+	}
+	nav li {
+		display: inline;
+		margin: 40px ;
+
+	}
+	aside {
+		width: 200px;
+		float: left;
+		margin-left: 40px;
+		margin-top: 10px;
+		border: dashed 1px #cccccc;
+		padding-left: 10px;
+	}
+	aside li {
+		margin-bottom: 20px;
+	}
+	section {
+		width: 700px;
+		float: right;
+		margin-top: 15px;
+		border: dashed 1px #cccccc;
+
+	}
+	#page {
+		width: 1000px;
+		margin: auto;
+		//border: solid 1px red;
+	}
+	</style>
 </head>
 <body>
-<h1> 우리 입맛에 딱, 베트남 음식 </h1>
+<h1> ★맛집★ </h1>
+	<div id='page'>
+	<header>
+		<div id='logo'>
+			 
+		</div>
+		<div id='top'>
+		로그인 | 회원가입 | 마이페이지 | 고객센터
+		</div>
+	</header>
+	<div class='clear'></div>
+	<nav>
+		<div class="dropdown">
+				<ul> ♤관광지 
+		<div class="dropdownContents">
+				<li> 바나힐 </li>
+				<li> 다낭 대성당 </li>
+				<li> 아시아 파크 </li>
+				<li>용다리</li>
+			
+		</div>
+				</ul>
+		</div>
+		<div class="dropdown">
+				<ul> ♤맛집
+		<div class="dropdownContents">
+				<li> 하노이 쓰어 </li>
+				<li> 반쎄오 바융 </li>
+				<li> 퍼 박 63 </li>
+				
+		</div>
+				</ul>
+		</div>
+		<div class="dropdown">
+				<ul> ♤카페
+		<div class="dropdownContents">
+				<li> 콩카페 </li>
+				<li> 하이랜드 커피 </li>
+				
+		</div>
+				</ul>
+		</div>
+		<div class="dropdown">
+				<ul> ♤쇼핑
+		<div class="dropdownContents">
+				<li> 빈컴 플라자 </li>
+				<li> 페바 초콜릿</li>
+			
+		</div>
+				</ul>
+		</div>		
+			</nav>	
+		<aside>
+			<ul><h3><a href="./tour.html">◎관광지</a></h3> 
+				<li>→바나 힐</li>
+				<li>→다낭 대성당</li>
+				<li>→아시아 파크</li>
+				<li>→용교</li> 
+			</ul> <hr>
+			<ul><h3><a href="./food.html">◎맛집</a></h3> 
+				<li>→하노이 쓰어</li>
+				<li>→반쎄오 바융<</li>
+				<li>→퍼 박 63</li>
+			</ul> <hr>
+			<ul><h3><a href="./cafe.html">◎카페</a></h3> 
+				<li>→콩카페</li>
+				<li>→하이랜드 커피</li>
+			</ul> <hr>
+			<ul><h3><a href="./shopping.html">◎쇼핑</a></h3> 
+				<li>→빈컴 플라자</li>
+				<li>→페바 초콜릿</li>
+			</ul> <hr>
+		</aside>	
+	<section>	
+<h1> 추천일정1 - 우리 입맛에 딱, 베트남 음식 </h1>
 <hr>
 베트남을 여행하기 좋은 이유 중 하나는 바로 우리 입맛에 딱 맞는 음식 때문! <br>
 한국에서도 쉽게 접할 수 있는 쌀국수 Phở를 비롯해 면을 주로 하는 요리가 많은 베트남 음식. <br> 
@@ -45,7 +198,7 @@
 더운 날씨로 인해 여행자들에게 가장 인기 있는 종류는 단연 아이스 커피. <br>
 그중에 카페 쓰어다는 연유를 넣어 달달하게 마시는 아이스 커피로, 진하면서 달콤한 맛이 일품이다. <hr>
 
-<h1> 조금 느린 여행, 다낭 </h1> <hr>
+<h1> 추천일정2 - 조금 느린 여행, 다낭 </h1> <hr>
 하루, 일주일, 한 달이 너무도 빠르게 지나가는 한국과 달리, 다낭에서는 조금 천천히, 여유 있는 시간을 가져 보자. 한국으로 돌아가면 언제 그랬냐는 듯 다시 바쁜 일상을 보내겠지만 이곳, 다낭에서 만큼은 하루 24시간을 오롯이 나만의 시간으로 채워 보자. 다낭에서 조금 느린 여행을 하는 법. <hr>
 
 <h3> 다낭 여행을 즐기는 법 </h3>
@@ -58,7 +211,7 @@
 ▶노을 지는 한 강 거닐어 보기 <br>
 <img src="./img/2-4.jpg" width="400px"> <hr> 
 
-<h1> 다낭의 밤은 낮보다 아름답다 </h1> <hr>
+<h1> 추천일정3 - 다낭의 밤은 낮보다 아름답다 </h1> <hr>
 <h2>한 강</h2> <hr>
 <bold>다낭의 중심을 가로지르는 한 강 <br>
 시내와 해안가를 나누는 경계 <br>
@@ -69,14 +222,15 @@
 강가 근처로 카페, 펍, 레스토랑이 모여 있어 야경을 즐기는 여행객들로 붐빈다. <br>
 
 <section class='trans'>
-<img src="./img/3-1.jpg"><br>
+<img src="./img/3-1.jpg" width="500px"><br>
 </section>
-<img src="./img/3-2.jpg"> <br>
+<img src="./img/3-2.jpg" width="500px"> <br>
 다낭 시내와 해안가를 나누는 경계, 한 강. <br>
 뜨거운 낮 시간에는 사람을 찾아볼 수 없을 만큼 인적이 드물지만 밤에는 다들 한데 모여 휴식을 즐기는 곳이다. <br>
 강변을 따라 시원한 바람이 불어오면, 언제 그랬냐는 듯 한낮의 무더위를 모두 잊을 수 있을 것. <br>
 다낭의 랜드마크인 용교를 비롯해 새롭게 떠오르는 야경 명소인 사랑의 부두까지 둘러보자. <br>
 저녁을 먹은 후 산책 삼아 거닐기 좋은 곳이다. <hr> 
+</section>
 
 <div id="back">
 <a href="./index.html">
